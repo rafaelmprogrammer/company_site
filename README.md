@@ -5,7 +5,7 @@
   ![image](https://github.com/user-attachments/assets/640a0783-9047-45e3-8a37-cf2d419f9c3d)
 
 
-A site created to share ideas, projects and resources on web development.
+A site created to share ideas, projects and resources of a company.
 
 Technologies used
 
