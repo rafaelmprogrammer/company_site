@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define o conjunto de caracteres usado (UTF-8) e ajusta a visualização para dispositivos móveis -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importa um arquivo CSS externo -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    
+    <title>Página Web Completa</title>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="titulo-header">
+            <h1>Página Web Completa</h1>
+        </div>
+        <!--Secção de Ícones de redes sociais -->
+        <section class="redes-sociais">
+            <a href="https://github.com" target="_blank"><img src="/media/img/github-logo-24.png" alt="GitHub Icon"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="/media/img/linkedin-square-logo-24.png" alt="LinkedIn Icon"></a>
+        </section>
+    </header>
+
+    <!-- Menu de navegação principal -->
+    <nav>
+        <a href="/html/index.html">Home</a>
+        <a href="/html/servicos.html">Os Nossos Serviços</a>
+        <a href="/html/sobre.html">Sobre nós</a>
+        <a href="/html/contactos.html" target="_blank">Contacto</a>
+    </nav>
+
+    <!-- Banner principal com vídeo de fundo -->
+    <div id="banner-principal">
+        <video autoplay muted loop>
+            <source src="/media/video/4496268-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <div class="cartoes">
+            <!--Secção de Serviços-->
+            <section class="servicos">
+                <h2>Serviços</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore placeat veniam qui vel! Harum ducimus quam distinctio unde perspiciatis, laudantium consectetur ipsa tempore quo quod itaque atque praesentium possimus eligendi voluptates fuga saepe a amet ut qui molestias aliquam cum esse repellat. Cupiditate, dolor voluptatibus doloribus nihil necessitatibus accusantium ratione?</p>
+                <a href="#">Saber mais</a>
+            </section>
+
+            <!--Secção de Projetos-->
+            <section class="projetos">
+                <h2>Projetos</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore placeat veniam qui vel! Harum ducimus quam distinctio unde perspiciatis, laudantium consectetur ipsa tempore quo quod itaque atque praesentium possimus eligendi voluptates fuga saepe a amet ut qui molestias aliquam cum esse repellat. Cupiditate, dolor voluptatibus doloribus nihil necessitatibus accusantium ratione?</p>
+                <a href="#">Saber mais</a>
+            </section>
+
+            <!--Secção de Notícias-->
+            <section class="noticias">
+                <h2>Notícias</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore placeat veniam qui vel! Harum ducimus quam distinctio unde perspiciatis, laudantium consectetur ipsa tempore quo quod itaque atque praesentium possimus eligendi voluptates fuga saepe a amet ut qui molestias aliquam cum esse repellat. Cupiditate, dolor voluptatibus doloribus nihil necessitatibus accusantium ratione?</p>
+                <a href="#">Saber mais</a>
+            </section>
+
+            <!-- Formulário de contato colocado como aside do lado direito da página-->
+            <aside class="contactos">
+                <h2>Contacto</h2>
+                <form action="index.php">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <textarea placeholder="Mensagem" rows="5" maxlength="50" required></textarea>
+                    <button  type="submit" class="botao-submeter">Enviar</button>
+                </form>
+            </aside>
+        </div>
+
+        <!-- Seção extra com informações sobre a equipa -->
+        <section class="seccao-extra">
+            <h2>Equipa</h2>
+            <div class="equipa">
+                <article>
+                    <img src="/media/img/pexels-julian-ruiz-304111594-14375983.jpg" alt="Web Developer Juliana Rui"> 
+                    <h2>Web Developer</h2>
+                </article>
+    
+                <article>
+                    <img src="/media/img/pexels-philboakye-1813947.jpg" alt="Web Developer Filipe Lamego"> 
+                    <h2>Web Developer</h2>
+                </article>
+                
+                <article class="equipa-3">
+                    <img src="/media/img/pexels-asilvafotografia-3680167.jpg" alt="Web Developer Silva Pedras"> 
+                    <h2>Web Developer</h2>
+                </article>
+            </div>        
+        </section>
+    </main>
+   
+
+    <!--Rodapé-->
+    <footer>
+        <!--Barra de navegação do rodapé-->
+
+        <section class="section-nav">
+            <nav class="nav-footer">
+                <a href="/html/index.html">Home</a>
+                <a href="/html/servicos.html">Os Nossos Serviços</a>
+                <a href="/html/sobre.html">Sobre nós</a>
+                <a href="/html/contactos.html">Contacto</a>
+            </nav>
+        </section>
+
+
+        <!--Secção de redes sociais do rodapé-->
+        <section class="redes-sociais">
+            <a href="https://github.com" target="_blank"><img src="/media/img/github-logo-24.png" alt="GitHub Icon"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="/media/img/linkedin-square-logo-24.png" alt="LinkedIn Icon"></a>
+        </section>
+
+        <!--Parágrafo informativo do rodapé-->
+        <p>Todas as imagens e vídeos utilizados não têm direitos de autor e servem apenas como placeholders.</p>
+    </footer>
+
+
+</body>
+</html>

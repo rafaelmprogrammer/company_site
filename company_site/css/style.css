@@ -1,0 +1,363 @@
+/* Configuração geral do corpo da página com a mudança da fonte */
+body{
+    margin: 0; 
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/*Todas as imagens têm 300 x 300px*/
+img{
+    width: 300px;
+    height: 300px;
+}
+
+/* Estilo do cabeçalho */
+header{
+    background-color: #101d21;
+    color: #ffffff;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+}
+
+.titulo-header > h1{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+header .redes-sociais{
+    display: flex;
+    gap: 20px;    
+    margin-right: 20px;
+}
+
+header .redes-sociais img{
+    width: 30px;
+    height: auto;
+}
+
+/* Estilo do menu de navegação*/
+nav{
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Estilo dos hyperlinks do menu de navegação*/
+nav a{
+    text-decoration: none;
+    color: #101d21;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Estilo dos hyperlinks quando o utilizador passa o rato por cima deles*/
+nav a:hover{
+    color:  #63a5a0;
+}
+
+/* Estilo do banner principal*/
+#banner-principal{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo do vídeo do banner principal */
+#banner-principal video{
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit:cover;
+}
+
+/* Estilo das seções de cartões */
+.cartoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px; 
+}
+
+.cartoes section{
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+
+/* Estilo dos hyperlinks presentes nos cartões de secções*/
+.cartoes a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+/* Estilo dos hyperlinks presentes nos cartões de secções quando o utilizador passa o rato por cima delas*/
+.cartoes a:hover{
+    color:  #04070889;
+}
+
+/* Estilo dos parágrafos presentes nos cartões de secções*/
+.cartoes section p{
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* Estilo das secções de cartões quando o utilizador passa o rato por cima delas*/
+.cartoes section:hover{
+    transform: translate(0%,-3%);
+    background-color: #63a59f27;
+}
+
+/*Estilo do cartão aside*/
+.cartoes aside {
+    text-align: center;
+    padding: 20px;
+    background: #f9f9f960;
+}
+
+aside h2{
+    margin: 0;
+    padding: 10px;
+}
+
+aside form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactos > form > input{
+    border: 0.1px solid #000;
+}
+
+.contactos > form > textarea{
+    border: 0.1px solid #000;
+}
+
+aside form input, aside form textarea, aside form button {
+    margin: 30px 10px 0px 0px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+/* Botão de enviar do formulário de contacto */
+.botao-submeter{
+    border-radius: 4px;
+    border: 0.3px solid #101d21;
+    background-color: rgba(245, 245, 245, 0);
+    width: 50%;
+    align-self: center;
+}
+
+.botao-submeter:hover{
+    background-color: #a2e4de27;
+    cursor: pointer;
+}
+
+/*Estilização da secção extra com informações da equipa*/
+.seccao-extra{
+    margin: 50px;
+    text-align: center;
+}
+
+.equipa{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.equipa article{
+    text-align: center;
+}
+
+
+.equipa article img{
+    width: 200px;
+    height: auto;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cartoes, .equipa {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Estilização do footer*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    background-color: #101d21;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    color: rgba(245, 245, 245, 0.8);
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+/* Barra de navegação do footer */
+.nav-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.nav-footer a:hover {
+    color: #63a5a0;
+}
+
+/* Redes sociais no footer */
+footer .redes-sociais {
+    display: flex;
+    gap: 20px;    
+    margin-right: 20px;
+}
+
+footer .redes-sociais img {
+    width: 30px;
+    height: auto;
+}
+
+/* Parágrafo informativo do footer */
+footer p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgba(245, 245, 245, 0.7);
+}
+
+/*PÁGINA SOBRE*/
+
+#main-container-sobre{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+    margin: 20px 40px 40px 40px;
+    padding: 20px 40px 40px 40px;
+    justify-content: center;
+}
+
+.text-section-sobre{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#main-container-sobre > img{
+    margin-left: 80px;
+}
+
+/*PÁGINA DE CONTACTO*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0);
+    border: 0.3px solid #101d2180;
+    color: #000000;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #a2e4de27;
+    cursor: pointer;
+}
+  
+#main-contacto {
+    border-radius: 5px;
+    background-color: rgba(228, 228, 228, 0.486);
+    padding: 10px;
+    margin: 0px 100px 50px 100px; 
+}
+
+  /*PÁGINA SERVIÇOS*/
+#tabela-servicos{
+    display: grid; 
+    grid-template-columns: 1fr;
+    margin: 40px;
+    justify-content: center;
+}
+
+table {
+    border: 1px solid green;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th {
+        background-color: #333FFF;
+        color: white;
+        padding: 10px;
+}
+td {
+        padding: 10px;
+}
+caption {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+}
+
+
+
+
+
